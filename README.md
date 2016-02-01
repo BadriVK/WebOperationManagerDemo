@@ -24,10 +24,10 @@ NSDictionary *params = @{@"first_name":@"",
                              @"last_name": @"",
                             };
  
-  WebServiceOperation *webOperation = [[WebServiceOperation alloc]init];
- [webOperation performWebOperationOnServer:@"YOURURL" withParameters:params withCallback:^(NSDictionary *response) {
+WebServiceOperation *webOperation = [[WebServiceOperation alloc]init];
+[webOperation performWebOperationOnServer:@"YOURURL" withParameters:params withCallback:^(NSDictionary *response) {
     //response in NSDictionary
- }];
+}];
  ```
 
 ## Author
