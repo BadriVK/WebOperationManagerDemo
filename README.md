@@ -24,8 +24,7 @@ NSDictionary *params = @{@"first_name":@"",
                              @"last_name": @"",
                             };
  
-let webOperation = AVWebOperation()
- 
+
  WebServiceOperation *webOperation = [[WebServiceOperation alloc]init];
     [webOperation performWebOperationOnServer:@"YOURURL" withParameters:params withCallback:^(NSDictionary *response) {
         //response in NSDictionary
