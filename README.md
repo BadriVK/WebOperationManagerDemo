@@ -20,9 +20,9 @@ Blocks in **Objective-C**
 
 Pass the params dictionary and URL
 ```
-NSDictionary *params = @{@"first_name":@"",
-                             @"last_name": @"",
-                            };
+NSDictionary *params = @{@"first_param_key":@"first_param_value",
+                         @"second_param_key": @"second_param_value",
+                        };
  
 WebServiceOperation *webOperation = [[WebServiceOperation alloc]init];
 [webOperation performWebOperationOnServer:@"YOURURL" withParameters:params withCallback:^(NSDictionary *response) {
